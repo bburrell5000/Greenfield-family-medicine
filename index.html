@@ -97,7 +97,7 @@ tailwind.config = {
 <header class="bg-surface/95 backdrop-blur-md fixed top-0 w-full z-50 border-b border-outline-variant/30 shadow-sm">
 <div class="flex justify-between items-center max-w-container-max mx-auto px-6 md:px-16 py-3">
   <a href="https://bburrell5000.github.io/Greenfield-family-medicine/index.html" aria-label="Greenfield Family Medicine Home">
-    <img alt="Greenfield Family Medicine Logo - Family Doctor Mesa AZ" class="h-12 w-auto" loading="eager" src="https://lh3.googleusercontent.com/aida/ADBb0ugxENdEf51WD_9OjXwSqW8ofx9-0HGyg5vYMvhSufc8bUsa_MxkIzcGUz2qbyH5JTW2gsXQ_m8jhAkMwqADwh7oVHxDI11all01gw1k1_RrREXXvi33KLuhgyoMGA15jKP9bc98uqZlqmhGH6XTMnVozibzWSHawpWqnEPOhKveQy67FeBmgdK8-gQq1OM0uga7GJs5KMPKPzZRrozEcxXXiTuZEr2OtfDY1A7KHRH1keZdoWNcGpBtH1lfyUzkYvBYzoTkyW4HxKc"/>
+    <img alt="Greenfield Family Medicine Logo - Family Doctor Mesa AZ" class="h-12 w-auto" loading="eager" src="https://raw.githubusercontent.com/bburrell5000/Greenfield-family-medicine/main/Greenfield%20Family%20Medicine%20Logo.png"/>
   </a>
   <nav class="hidden md:flex gap-8 items-center" aria-label="Main navigation">
     <a class="font-body-md text-body-md uppercase tracking-wider text-primary font-bold border-b-2 border-[#6B8F71] pb-1" href="https://bburrell5000.github.io/Greenfield-family-medicine/index.html">About</a>
@@ -130,11 +130,15 @@ tailwind.config = {
 <main>
 <!-- Hero -->
 <section class="relative w-full overflow-hidden min-h-[90vh] flex items-center bg-surface-bright pb-16" aria-label="Welcome to Greenfield Family Medicine">
-<div class="absolute top-0 right-0 w-full lg:w-[60%] h-full z-0 opacity-20 lg:opacity-100">
-  <img alt="Dr. Andrew Burrell, family physician at Greenfield Family Medicine in Mesa, Arizona" class="w-full h-full object-cover object-center lg:rounded-l-[80px]" loading="eager" src="https://raw.githubusercontent.com/bburrell5000/Greenfield-family-medicine/main/Waiting%20room%20landscape%201.jpg"/>
+<!-- Photo: starts at 50% on desktop, full width faded on mobile -->
+<div class="absolute top-0 right-0 w-full lg:w-[52%] h-full z-0 opacity-20 lg:opacity-100">
+  <img alt="Greenfield Family Medicine waiting room in Mesa, Arizona" class="w-full h-full object-cover object-center" loading="eager" src="https://raw.githubusercontent.com/bburrell5000/Greenfield-family-medicine/main/Waiting%20room%20landscape%201.jpg"/>
+  <!-- Gradient fade on left edge of photo so text is never obscured -->
+  <div class="absolute inset-0 bg-gradient-to-r from-surface-bright via-surface-bright/30 to-transparent lg:block hidden" style="width:120px;"></div>
 </div>
 <div class="max-w-container-max mx-auto px-6 md:px-16 grid grid-cols-1 lg:grid-cols-12 gap-6 relative z-10 w-full">
-  <div class="lg:col-span-5 flex flex-col justify-center z-20 pt-12 lg:pt-0 bg-surface-bright/90 lg:bg-transparent p-8 lg:p-0 rounded-3xl lg:rounded-none">
+  <!-- Text column: spans 6 of 12 cols on desktop giving plenty of space before photo -->
+  <div class="lg:col-span-6 flex flex-col justify-center z-20 pt-12 lg:pt-0 bg-surface-bright/95 lg:bg-surface-bright/90 p-8 lg:pr-12 lg:pl-0 rounded-3xl lg:rounded-none">
     <div class="inline-flex items-center gap-2 mb-6 bg-surface-container-high px-4 py-2 rounded-full w-fit">
       <span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings:'FILL' 1;">favorite</span>
       <span class="font-label-caps text-label-caps text-primary tracking-widest uppercase">Est. 1990 · Mesa, Arizona</span>
@@ -145,11 +149,11 @@ tailwind.config = {
     <p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-lg">
       Your trusted family doctor in Mesa, AZ since 1990. Dr. Andrew Burrell, DO and his team provide compassionate primary care for every member of your family — from toddlers to seniors.
     </p>
-    <div class="flex flex-col sm:flex-row gap-4 mb-10">
-      <a class="flex items-center justify-center gap-2 bg-secondary-fixed text-on-secondary-fixed font-interactive text-interactive px-8 py-4 rounded-full hover:bg-secondary hover:text-on-secondary transition-all shadow-md" href="#contact">
+    <div class="flex flex-col sm:flex-row gap-4 mb-10 max-w-md">
+      <a class="flex items-center justify-center gap-2 bg-secondary-fixed text-on-secondary-fixed font-interactive text-interactive px-6 py-4 rounded-full hover:bg-secondary hover:text-on-secondary transition-all shadow-md text-sm" href="#contact">
         Schedule an Appointment <span class="material-symbols-outlined text-sm">arrow_forward</span>
       </a>
-      <a class="flex items-center justify-center gap-2 bg-transparent border border-outline font-interactive text-interactive px-8 py-4 rounded-full text-on-surface hover:bg-surface-container-high transition-colors" href="https://bburrell5000.github.io/Greenfield-family-medicine/services.html">
+      <a class="flex items-center justify-center gap-2 bg-surface/95 border border-outline font-interactive text-interactive px-6 py-4 rounded-full text-on-surface hover:bg-surface-container-high transition-colors text-sm" href="https://bburrell5000.github.io/Greenfield-family-medicine/services.html">
         Our Services
       </a>
     </div>
@@ -421,7 +425,7 @@ tailwind.config = {
 <footer class="w-full bg-inverse-surface" aria-label="Site footer">
 <div class="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-container-max mx-auto px-6 md:px-16 py-16">
   <div class="col-span-1 flex flex-col gap-4">
-    <img alt="Greenfield Family Medicine Logo" class="h-16 w-auto mb-4 bg-white/90 p-2 rounded object-contain object-left" loading="lazy" src="https://lh3.googleusercontent.com/aida/ADBb0ugxENdEf51WD_9OjXwSqW8ofx9-0HGyg5vYMvhSufc8bUsa_MxkIzcGUz2qbyH5JTW2gsXQ_m8jhAkMwqADwh7oVHxDI11all01gw1k1_RrREXXvi33KLuhgyoMGA15jKP9bc98uqZlqmhGH6XTMnVozibzWSHawpWqnEPOhKveQy67FeBmgdK8-gQq1OM0uga7GJs5KMPKPzZRrozEcxXXiTuZEr2OtfDY1A7KHRH1keZdoWNcGpBtH1lfyUzkYvBYzoTkyW4HxKc"/>
+    <img alt="Greenfield Family Medicine Logo" class="h-16 w-auto mb-4 bg-white/90 p-2 rounded object-contain object-left" loading="lazy" src="https://raw.githubusercontent.com/bburrell5000/Greenfield-family-medicine/main/Greenfield%20Family%20Medicine%20Logo.png"/>
     <p class="font-body-md text-body-md text-on-tertiary-container opacity-80">Your trusted family medicine clinic in Mesa, AZ. Serving East Valley families since 1990.</p>
   </div>
   <div class="col-span-1 flex flex-col gap-3">
